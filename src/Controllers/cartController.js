@@ -305,7 +305,7 @@ const deleteCart =  async function(req,res){
         else{
 
         const updated =  await cartModel.findOneAndUpdate({_id:cart._id },deletecart,{new:true})               
-          return res.status(204).send({ status: true, message: `cart deleted successfully.` ,data:updated});
+          return res.status(204)
       
         }
       }

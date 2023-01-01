@@ -18,7 +18,7 @@ const isValid = function (value) {
 //============================================Validation for Email=============================================
 
 const isValidEmail = function (mail) {
-  if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(mail)) {
+  if (/^[a-z0-9_]{3,}@[a-z]{3,}[.]{1}[a-z]{3,6}$/.test(mail)) {
     return true;
   }
   return false;
